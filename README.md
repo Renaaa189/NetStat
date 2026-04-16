@@ -64,11 +64,21 @@ Permite identificar dispositivos activos dentro de una red y cuenta con múltipl
 ## Vista del sistema
 
 <p align="center">
-  <img src="" width="700"/>
+  <img src="./Imagenes/NetStatInicio.PNG" width="700"/>
 </p>
 
 <p align="center">
-  <sub>Vista general del escaneo en ejecución</sub>
+  <sub>Pantalla inicial del sistema</sub>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./Imagenes/NetStat.png" width="700"/>
+</p>
+
+<p align="center">
+  <sub>Resultados del escaneo en ejecución</sub>
 </p>
 
 ---
