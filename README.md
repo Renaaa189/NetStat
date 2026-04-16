@@ -11,23 +11,23 @@
 
 ---
 
-## 🧠 Descripción
+## Descripción
 
-**NetStat** es una herramienta de escritorio que permite escanear redes locales de forma rápida, clara y eficiente.
+**NetStat** es una aplicación que permite escanear redes locales de forma rápida, clara y eficiente.
 
-Permite identificar dispositivos activos, obtener información clave y visualizar resultados en una interfaz intuitiva, pensada tanto para usuarios sin experiencia como para quienes buscan una herramienta técnica simple pero funcional.
+Permite identificar dispositivos activos dentro de una red y cuenta con múltiples funcionalidades que facilitan la obtención de información clave, mostrando los resultados en una interfaz intuitiva pensada tanto para usuarios sin experiencia como para quienes buscan una herramienta técnica simple pero funcional.
 
 ---
 
-## ⚙️ Características principales
+## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="25"> Características principales
 
-### 🔍 Escaneo de red
-- Escaneo de rangos de IP personalizados  
+### Escaneo de red
+- Escaneo de rangos de IP especificados  
 - Generación automática de direcciones dentro de la subred  
 - Detección de dispositivos activos  
 - Medición de latencia (tiempo de respuesta)  
 
-### 📊 Visualización de datos
+### Visualización de datos
 - Tabla clara y organizada  
 - Información por dispositivo:
   - Dirección IP  
@@ -36,19 +36,19 @@ Permite identificar dispositivos activos, obtener información clave y visualiza
   - Tiempo de respuesta  
 - Barra de progreso en tiempo real  
 
-### 🧩 Control del proceso
+### Control del proceso
 - Inicio y cancelación de escaneo  
 - Validación automática de direcciones IP  
 - Límite de seguridad para evitar sobrecarga  
 
-### 💾 Gestión de resultados
+### Gestión de resultados
 - Guardado de datos  
 - Filtrado y ordenamiento  
 - Organización eficiente de la información  
 
 ---
 
-## 🎨 Diseño y experiencia
+## Diseño
 
 - Interfaz intuitiva  
 - Flujo de uso guiado  
@@ -61,11 +61,10 @@ Permite identificar dispositivos activos, obtener información clave y visualiza
 
 ---
 
-## 🖥️ Vista del sistema
+## Vista del sistema
 
 <p align="center">
-  <!-- REEMPLAZAR POR TU GIF -->
-  <img src="TU_GIF_ACA.gif" width="700"/>
+  <img src="" width="700"/>
 </p>
 
 <p align="center">
@@ -74,43 +73,33 @@ Permite identificar dispositivos activos, obtener información clave y visualiza
 
 ---
 
-## 🧪 Tecnologías y herramientas
+## <img src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif" width="25"> Tecnologías y herramientas
 
 <table align="center">
-  <tr>
-    <td align="center"><b>Lenguaje</b></td>
-    <td align="center"><b>Interfaz</b></td>
-    <td align="center"><b>Lógica</b></td>
-    <td align="center"><b>Entorno</b></td>
-  </tr>
-
   <tr>
     <td align="center">
       <img src="https://skillicons.dev/icons?i=java" />
     </td>
     <td align="center">
-      <img src="https://skillicons.dev/icons?i=java" /><br>
-      <sub>Swing</sub>
+      <img src="https://skillicons.dev/icons?i=vscode" />
     </td>
     <td align="center">
-      <sub>
-        java.io<br>
-        java.util<br>
-        BufferedReader<br>
-        InputStreamReader
-      </sub>
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=vscode,eclipse" /><br>
-      <sub>Windows • Java 11/17</sub>
+      <img src="https://skillicons.dev/icons?i=eclipse" />
     </td>
   </tr>
 </table>
 
+<p align="center">
+  <sub>
+    Librerías utilizadas: java.io • java.util • BufferedReader • InputStreamReader • Swing
+  </sub>
+</p>
+
 ---
 
-## 🚀 Instalación
+##  [Instala el programa](https://github.com/Renaaa189/Escaner-de-red-/blob/main/Escaner.jar) 
 
-```bash
-git clone https://github.com/TU-USUARIO/NetStat.git
-cd NetStat
+<!-- Footer -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:6366f1&height=65&section=footer"/>
+</p>
