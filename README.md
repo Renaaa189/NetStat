@@ -97,7 +97,7 @@ Permite identificar dispositivos activos dentro de una red y cuenta con múltipl
 
 ---
 
-##  [Instala el programa](https://github.com/Renaaa189/Escaner-de-red-/blob/main/Escaner.jar) 
+##  [Instala el programa](https://github.com/Renaaa189/NetStat/tree/main/Programa) 
 
 <!-- Footer -->
 <p align="center">
