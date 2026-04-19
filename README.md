@@ -22,7 +22,7 @@ Permite identificar dispositivos activos dentro de una red y cuenta con múltipl
 ## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="25"> Características principales
 
 ### Escaneo de red
-- Escaneo de rangos de IP especificados  
+- Escaneo de rangos de IP especificado  
 - Generación automática de direcciones dentro de la subred  
 - Detección de dispositivos activos  
 - Medición de latencia (tiempo de respuesta)  
