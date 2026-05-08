@@ -2,68 +2,155 @@
 <svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0b0f1a" />
-      <stop offset="100%" stop-color="#111827" />
-    </linearGradient>
+    <!-- Moving background glow -->
+    <radialGradient id="movingGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#93c5fd" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0b0f1a" stop-opacity="0"/>
+      
+      <animate attributeName="cx"
+               values="35%;65%;35%"
+               dur="7s"
+               repeatCount="indefinite"/>
 
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#93c5fd" />
-      <stop offset="100%" stop-color="#60a5fa" />
-    </linearGradient>
+      <animate attributeName="cy"
+               values="30%;70%;30%"
+               dur="8s"
+               repeatCount="indefinite"/>
+    </radialGradient>
   </defs>
 
-  <rect width="1200" height="400" fill="url(#bg)" />
+  <!-- Background -->
+  <rect width="1200" height="400" fill="#0b0f1a"/>
+  <circle cx="600" cy="200" r="280" fill="url(#movingGlow)"/>
 
-  <!-- Network nodes -->
-  <g opacity="0.35">
-    <circle cx="150" cy="120" r="4" fill="#93c5fd" />
-    <circle cx="350" cy="220" r="4" fill="#93c5fd" />
-    <circle cx="550" cy="100" r="4" fill="#93c5fd" />
-    <circle cx="750" cy="240" r="4" fill="#93c5fd" />
-    <circle cx="950" cy="140" r="4" fill="#93c5fd" />
-    <circle cx="1100" cy="260" r="4" fill="#93c5fd" />
+  <!-- Connection -->
+  <path d="M450 205 C560 120, 680 300, 760 205"
+        stroke="#93c5fd"
+        stroke-width="2"
+        opacity="0.25"
+        fill="none"/>
 
-    <path id="p1" d="M150 120 L350 220 L550 100" stroke="#93c5fd" opacity="0.2" fill="none" />
-    <path id="p2" d="M550 100 L750 240 L950 140" stroke="#93c5fd" opacity="0.2" fill="none" />
-    <path id="p3" d="M350 220 L750 240 L1100 260" stroke="#93c5fd" opacity="0.2" fill="none" />
+  <!-- LEFT COMPUTER -->
+  <g transform="translate(390,140)">
+    
+    <!-- monitor -->
+    <rect x="0" y="0"
+          width="90"
+          height="60"
+          rx="6"
+          fill="#1f2937"
+          stroke="#93c5fd"
+          stroke-width="1.5"/>
+
+    <!-- screen -->
+    <rect x="10"
+          y="10"
+          width="70"
+          height="40"
+          rx="3"
+          fill="#0b1220"/>
+
+    <!-- stand -->
+    <rect x="35" y="62"
+          width="20"
+          height="10"
+          fill="#374151"/>
+
+    <rect x="25"
+          y="72"
+          width="40"
+          height="6"
+          fill="#93c5fd"/>
   </g>
 
-  <!-- PACKETS -->
+  <!-- RIGHT COMPUTER -->
+  <g transform="translate(760,140)">
+    
+    <rect x="0"
+          y="0"
+          width="90"
+          height="60"
+          rx="6"
+          fill="#1f2937"
+          stroke="#60a5fa"
+          stroke-width="1.5"/>
+
+    <rect x="10"
+          y="10"
+          width="70"
+          height="40"
+          rx="3"
+          fill="#0b1220"/>
+
+    <rect x="35"
+          y="62"
+          width="20"
+          height="10"
+          fill="#374151"/>
+
+    <rect x="25"
+          y="72"
+          width="40"
+          height="6"
+          fill="#60a5fa"/>
+  </g>
+
+  <!-- Ping request -->
   <circle r="5" fill="#60a5fa">
-    <animateMotion dur="3s" repeatCount="indefinite">
-      <mpath href="#p1" />
-    </animateMotion>
+    <animateMotion dur="1.5s"
+                   repeatCount="indefinite"
+                   path="M450 205 C560 120, 680 300, 760 205"/>
   </circle>
 
-  <circle r="5" fill="#93c5fd">
-    <animateMotion dur="4s" repeatCount="indefinite">
-      <mpath href="#p2" />
-    </animateMotion>
+  <!-- Ping response -->
+  <circle r="4" fill="#93c5fd">
+    <animateMotion dur="1.8s"
+                   repeatCount="indefinite"
+                   path="M760 205 C680 300, 560 120, 450 205"/>
   </circle>
 
-  <circle r="5" fill="#60a5fa">
-    <animateMotion dur="3.5s" repeatCount="indefinite">
-      <mpath href="#p3" />
-    </animateMotion>
+  <!-- Signal pulses -->
+  <circle r="2.5"
+          fill="#93c5fd"
+          opacity="0.8">
+    <animateMotion dur="2.2s"
+                   repeatCount="indefinite"
+                   path="M450 205 C560 120, 680 300, 760 205"/>
   </circle>
 
-  <!-- Title (clean, no neon) -->
-  <text x="80" y="180" font-size="68" font-family="Arial, sans-serif" fill="#e5e7eb" font-weight="bold">
+  <circle r="2.5"
+          fill="#60a5fa"
+          opacity="0.8">
+    <animateMotion dur="2.4s"
+                   repeatCount="indefinite"
+                   path="M760 205 C680 300, 560 120, 450 205"/>
+  </circle>
+
+  <!-- TITLE -->
+  <text x="80"
+        y="160"
+        font-size="68"
+        font-family="Arial"
+        fill="#e5e7eb"
+        font-weight="bold">
     NetStat
   </text>
 
   <!-- Subtitle -->
-  <text x="80" y="220" font-size="22" font-family="Arial, sans-serif" fill="#cbd5e1">
-    Escáner de IPs en red local
-  </text>
-
-  <!-- Description -->
-  <text x="80" y="255" font-size="18" font-family="Arial, sans-serif" fill="#94a3b8">
+  <text x="80"
+        y="205"
+        font-size="22"
+        font-family="Arial"
+        fill="#cbd5e1">
     Tu scanner de red
   </text>
 
-  <!-- Subtle line -->
-  <rect x="80" y="270" width="400" height="2" fill="#334155" />
+  <!-- Divider -->
+  <rect x="80"
+        y="235"
+        width="420"
+        height="2"
+        fill="#334155"/>
 
 </svg>
