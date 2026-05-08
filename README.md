@@ -1,6 +1,5 @@
-<!-- banner -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rounded&color=0:1e293b,100:0ea5e9&height=180&section=header&text=NetStat&fontSize=42&fontColor=ffffff&animation=fadeIn&desc=Escáner%20de%20red&descAlignY=65&descSize=16" />
+  <img src="Imagenes/banner.svg" alt="Renata Gallucci Banner"/>
 </p>
 
 <h3 align="center">Escaneá, analizá y entendé tu red en segundos</h3>
