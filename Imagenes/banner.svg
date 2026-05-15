@@ -221,7 +221,7 @@
     <text x="76" y="21" text-anchor="middle" font-size="14" fill="#cbd5e1">DATA FLOW</text>
   </g>
 
-  <!-- Light particl
+  <!-- Light particles -->
   <g opacity="0.75" filter="url(#glow)">
     <circle cx="182" cy="96" r="2.8" fill="#93c5fd" class="pulse"/>
     <circle cx="1022" cy="86" r="2.5" fill="#60a5fa" class="pulse2"/>
