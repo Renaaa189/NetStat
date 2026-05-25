@@ -76,7 +76,7 @@ Permite identificar dispositivos activos dentro de una red y cuenta con múltipl
 </p>
 
 <p align="center">
-  <sub>Resultados del escaneo en ejecución</sub>
+  <sub>Resultados del escaneo en ejecución </sub>
 </p>
 
 ---
