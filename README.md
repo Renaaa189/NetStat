@@ -50,7 +50,6 @@ Permite identificar dispositivos activos dentro de una red y cuenta con múltipl
 ## Diseño
 
 - Interfaz intuitiva  
-- Flujo de uso guiado  
 - Botones claros y accesibles  
 - Información visible de forma inmediata  
 
