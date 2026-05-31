@@ -54,7 +54,7 @@ public class Controlador {
    
    private static String obtenerNombre(String ip) {
        try {
-    	   ProcessBuilder pb = new ProcessBuilder("nslookup", ip); // Arma el comando.
+    	   ProcessBuilder pb = new ProcessBuilder("nslookup", ip); // Arma el comando
     	   pb.redirectErrorStream(true);
     	   
     	   Process proceso = pb.start(); // Inicia el comando
