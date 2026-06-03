@@ -14,7 +14,7 @@
 
 **NetStat** es una aplicación que permite escanear redes locales de forma rápida, clara y eficiente.
 
-Permite identificar dispositivos activos dentro de una red y cuenta con múltiples funcionalidades que facilitan la obtención de información clave, mostrando los resultados en una interfaz intuitiva pensada tanto para usuarios sin experiencia como para quienes buscan una herramienta técnica simple pero funcional.
+Permite identificar dispositivos activos dentro de una red y cuenta con múltiples funcionalidades que facilitan la obtención de información clave, mostrando los resultados en una interfaz intuitiva pensada tanto para usuarios sin experiencia como para quienes buscan una herramienta técnica simple pero funcional. 
 
 ---
 
